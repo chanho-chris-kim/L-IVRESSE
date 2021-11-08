@@ -1,0 +1,158 @@
+@use './styles/partials/typography' as *;
+@use './styles/partials/variables' as *;
+@use './styles/layout/header';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --bodygradient: radial-gradient(
+        circle,
+         rgba(70,51,210,1) 0%, 
+         rgba(255,91,162,1) 100%);
+  }
+
+
+body {
+    margin: 0;
+    color: white;
+    font-family: $fontCormorant;
+    //gradient
+    background-image: var(--bodygradient);
+    background-size: 300%;
+    animation: bg-animation 10s infinite alternate;
+  }
+
+  @keyframes bg-animation{
+      0% {background-position: left;}
+      100% {background-position: right;} 
+  }
+
+.matching {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+
+.matching-box {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details {
+    width: 12rem;
+    height: fit-content;
+    padding: 1rem;
+    border: 1px solid white;
+    box-shadow: 0px 4px 4px 4px rgb(0 0 0 / 20%);
+    border-radius: 0.3rem;
+}
+
+.poster {
+    width: 12rem;
+    height: 22rem;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 4px 4px rgb(0 0 0 / 20%);
+}
+
+.movie__poster-image{
+    width: 12rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.cocktail__poster-image{
+    width: 12rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.overlay {
+    opacity: 0;
+}
+
+.movie {
+    &__details {
+    margin-left: 3rem;
+    }
+}
+
+.title {
+    text-align: center;
+    font-family: $fontCormorant;
+    font-weight: 200;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1rem;
+}
+
+
+.buttons {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+:root {
+    --gradient: linear-gradient(
+        90deg, 
+        #ffcbdf,
+        rgb(167, 247, 213),
+        rgb(11, 255, 89), 
+        rgb(91, 0, 91),
+        rgb(255, 0, 255));
+  }
+
+.button {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: rgb(45, 6, 63);
+    border: none;
+    &:hover{
+        color: #FFFFFF;
+    }
+
+    &__container{
+        cursor: pointer;
+        padding: 0.8rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 0.12em;
+        transition: all 0.2s;
+        background-image: var(--gradient);
+        background-size: 300%;
+        background-position: left; 
+        transition: background-position 1s;
+
+        &:hover, &:focus{
+        color:#000000;
+        background-color:#FFFFFF;
+        background-position: right; 
+        }
+    }
+}
+
+
+.cocktail {
+&__details {
+    margin-right: 3rem;
+    }
+}
+

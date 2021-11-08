@@ -1,0 +1,31 @@
+@use './partials/typography' as *;
+@use './partials/variables' as *;
+@use './layout/header';
+@use './layout/hero';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body {
+  // font-family: $mainFont;
+  font-family: $fontCormorant;
+  color: white;
+  //gradient
+    background: rgb(255,91,162);
+    background: radial-gradient(circle, rgba(255,91,162,1) 0%, rgba(97,82,209,1) 100%);
+}
+
+#movie__genre{
+  position: relative;
+  left:50%;
+  width: 40%;
+  height:2rem;
+
+}
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Ivresse</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./dreammatch.css">
+</head>
+<body>
+    <header class="header"> 
+        <a class='header__link' href="../index.html">
+            <h1 class="header__title">L'Ivresse</h1>
+        </a> 
+
+        <nav class="header__nav">
+            <a class="header__nav-link" href="./pages/matching.html">Matching</a>
+            <a class="header__nav-link" href="favourites.html">Favourites</a>
+            <a class="header__nav-link" href="contact.html ">Contact</a>   
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__container">
+            <h2 class="hero__heading">What are you in the mood for?</h2>
+            <div class="hero__input-container">
+                <form>
+                    <select id = "movie__genre">
+                        <!-- <option value="genre">Pick a genre</option>
+                        <option value="option1">Drama</option> 
+                        <option value ="option2">Romance</option> 
+                        <option value ="option3">Action</option> 
+                        <option value ="option4">Horror</option>   -->
+                   </select>
+                   <!-- <input type ='submit' value = 'submit'> -->
+                    <!-- <input class="hero__genre-input" type="text" id="input" name="genreInput" placeholder="Pick a genre"/> -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="matching">
+            <section class="movie matching-box">
+                <div class="movie__details details">
+                    <h2 class="movie__title title"> Movie Name</h2>
+                    <p class="movie__description description"></p>
+                </div>
+
+                <div class="movie__poster poster">
+                    <div class="overlay"></div>
+                    <img src="https://media.giphy.com/media/SRvuy77w7iA4tGRfNI/giphy.gif" alt="" class="movie__poster-image">
+                </div>
+            </section>
+
+            <div class="buttons">
+                <div class="button__container">
+                    <a class="button button1">
+                        <p>
+                            S<br>
+                            H<br>
+                            U<br>
+                            F<br>
+                            F<br>
+                            L<br>
+                            E
+                        </p>
+                    </a>
+                </div>
+
+                <div class="button__container">
+                    <a class="button button2">
+                        <p>
+                            S<br>
+                            H<br>
+                            U<br>
+                            F<br>
+                            F<br>
+                            L<br>
+                            E
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <section class="cocktail matching-box">
+                <div class="cocktail__poster poster">
+                    <div class="overlay"></div>
+                    <img src="https://media.giphy.com/media/SRvuy77w7iA4tGRfNI/giphy.gif" alt="" class="cocktail__poster-image">
+                </div>
+                
+                <div class="cocktail__details details">
+                    <h2 class="cocktail__title title">COCKTAIL NAME</h2>
+                    <p class="cocktail__description description"></p>
+                </div>
+        </section>
+        </section>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>
